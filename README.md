@@ -1,10 +1,10 @@
-#🛍️ Nexora Vibe Matcher: Semantic Search for E-commerce
+# 🛍️ Nexora Vibe Matcher: Semantic Search for E-commerce
 This repository contains the source code for a "vibe matcher" proof-of-concept, as part of an assignment. It's a simple semantic search engine built in a Python notebook that allows users to find products based on abstract vibes or styles rather than exact keywords.
 
-#🚀 The Business Case: Why AI at Nexora?
+# 🚀 The Business Case: Why AI at Nexora?
 At Nexora, many customers browse with a specific vibe or style in mind (e.g., "cozy fall outfit"), not a precise product name. Traditional keyword search fails to capture this intent, leading to missed sales and a frustrating user experience. By implementing an AI-powered semantic search, we bridge this gap. This "vibe matcher" converts our product descriptions into rich vector embeddings, allowing us to understand the meaning behind queries. This not only creates a more intuitive and personalized shopping journey but also drives superior product discovery, which directly leads to higher customer engagement and increased conversion rates.
 
-#✨ Features
+# ✨ Features
 Semantic Search: Understands the meaning of queries, not just keywords.
 
 Vibe Matching: Finds products that match abstract queries like "energetic urban chic" or "comfortable casual."
@@ -15,20 +15,19 @@ Cosine Similarity: Ranks search results by calculating the mathematical "closene
 
 Performance Metrics: Includes basic latency tracking to measure search speed.
 
-#⚙️ How to Run This Notebook
+# ⚙️ How to Run This Notebook
 This notebook is designed to be run in an environment like Google Colab or a local Jupyter server.
 
-Clone the Repository:
+## Clone the Repository:
 
-Bash
 
 '''  git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 cd YOUR-REPOSITORY  '''
 Install Dependencies: The notebook will install its own dependencies, but you can also install them manually:
 
-Bash
 
-pip install pandas numpy scikit-learn matplotlib huggingface_hub
+
+''' pip install pandas numpy scikit-learn matplotlib huggingface_hub
 Set Your API Key (Securely): This project requires a Hugging Face API Token to run. It is intentionally not hard-coded. The notebook uses getpass to securely ask for your key when you run it.
 
 When prompted, paste your hf_... token into the secure input box.
@@ -36,11 +35,13 @@ When prompted, paste your hf_... token into the secure input box.
 Python
 
 ## The code used in the notebook:
-''' from getpass import getpass
+'''python
+from getpass import getpass
 import os
 
 if "HF_TOKEN" not in os.environ:
-    os.environ["HF_TOKEN"] = getpass("Enter your Hugging Face API Key: ") '''
+    os.environ["HF_TOKEN"] = getpass("Enter your Hugging Face API Key: ) 
+'''
 Run the Notebook: Open vibe_matcher.ipynb and select "Run All" in your notebook environment. The notebook is saved with all outputs visible, so you can also review the results directly without re-running.
 
 # 📈 Example Results
