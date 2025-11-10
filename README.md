@@ -15,35 +15,6 @@ Cosine Similarity: Ranks search results by calculating the mathematical "closene
 
 Performance Metrics: Includes basic latency tracking to measure search speed.
 
-# ⚙️ How to Run This Notebook
-This notebook is designed to be run in an environment like Google Colab or a local Jupyter server.
-
-## Clone the Repository:
-
-
-'''  git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-cd YOUR-REPOSITORY  '''
-Install Dependencies: The notebook will install its own dependencies, but you can also install them manually:
-
-
-
-''' pip install pandas numpy scikit-learn matplotlib huggingface_hub
-Set Your API Key (Securely): This project requires a Hugging Face API Token to run. It is intentionally not hard-coded. The notebook uses getpass to securely ask for your key when you run it.
-
-When prompted, paste your hf_... token into the secure input box.
-
-Python
-
-## The code used in the notebook:
-'''python
-from getpass import getpass
-import os
-
-if "HF_TOKEN" not in os.environ:
-    os.environ["HF_TOKEN"] = getpass("Enter your Hugging Face API Key: ) 
-'''
-Run the Notebook: Open vibe_matcher.ipynb and select "Run All" in your notebook environment. The notebook is saved with all outputs visible, so you can also review the results directly without re-running.
-
 # 📈 Example Results
 The evaluation loop tests three queries. The system successfully finds 9 "good matches" (similarity > 0.7) across these queries, indicating high relevance.
 
